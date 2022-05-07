@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root{
+    --white: hsl(0, 0%, 100%);
+    --lightgray: hsl(212, 45%, 89%);
+    --grayishblue: hsl(220, 15%, 55%);
+    --darkblue: hsl(218, 44%, 22%);
+    --background:#D5E1EF;
+}
+*{
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-size: 15px;
+}
+body{
+    background-color: var(--background);
+    box-sizing: border-box;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+#container{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#qr-code-card{
+    width: 21.47rem;
+    height: 33.2rem;
+    background-color: var(--white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#qr-code-card img{
+    width: 19.33rem;
+    height: 19.33rem;
+    border-radius: 10px;
+}
+#qr-code-card #content{
+    display:flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    position: relative;
+    top: 1.13rem;
+}
+#qr-code-card #text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 16.53rem;
+    height: 8.13rem;
+    margin:0 auto;
+}
+#qr-code-card h1{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    color:var(--darkblue);
+
+}
+#qr-code-card p{
+    text-align: center;
+    color: var(--grayishblue);
+}
